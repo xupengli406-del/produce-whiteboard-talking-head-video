@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "kind": "schematic",
+  "format": "talking-head",
+  "duration": 26,
+  "title": "会用 AI，为什么还是做不出视频？",
+  "series": "画板手绘 · 编排示意",
+  "hook": {
+    "text": "会用 AI，为什么还是做不出视频？",
+    "start": 0,
+    "core_clear_by": 2.5,
+    "basis": "自造的解释问题，用于演示结构，不代表已验证的用户调查或真实口播",
+    "bridge": "先把一个观点、具体例子和讲述顺序连起来。"
+  },
+  "media": [],
+  "elements": [
+    {
+      "id": "tool",
+      "type": "card",
+      "x": 60,
+      "y": 115,
+      "w": 190,
+      "h": 108,
+      "text": "会用工具",
+      "color": "white",
+      "reveal": "word"
+    },
+    {
+      "id": "gap",
+      "type": "path",
+      "paths": [
+        "M 268 169 Q 320 157 375 169 M 363 157 L 378 169 L 363 181"
+      ],
+      "color": "red",
+      "reveal": "stroke"
+    },
+    {
+      "id": "result",
+      "type": "card",
+      "x": 405,
+      "y": 115,
+      "w": 190,
+      "h": 108,
+      "text": "内容卡住了",
+      "color": "yellow",
+      "reveal": "word"
+    },
+    {
+      "id": "question",
+      "type": "label",
+      "x": 85,
+      "y": 290,
+      "text": "中间还缺什么？",
+      "color": "yellow",
+      "reveal": "word"
+    },
+    {
+      "id": "point",
+      "type": "card",
+      "x": 650,
+      "y": 95,
+      "w": 280,
+      "h": 130,
+      "text": "先讲清一个观点",
+      "color": "yellow",
+      "reveal": "word"
+    },
+    {
+      "id": "point-link",
+      "type": "path",
+      "paths": [
+        "M 603 169 Q 623 157 642 169 M 632 158 L 647 169 L 633 181"
+      ],
+      "color": "yellow",
+      "reveal": "stroke"
+    },
+    {
+      "id": "example",
+      "type": "card",
+      "x": 55,
+      "y": 345,
+      "w": 235,
+      "h": 104,
+      "text": "再给具体例子",
+      "color": "white",
+      "reveal": "word"
+    },
+    {
+      "id": "order",
+      "type": "card",
+      "x": 340,
+      "y": 345,
+      "w": 250,
+      "h": 104,
+      "text": "按理解顺序展开",
+      "color": "white",
+      "reveal": "word"
+    },
+    {
+      "id": "order-link",
+      "type": "path",
+      "paths": [
+        "M 300 395 Q 310 389 329 395 M 319 385 L 332 395 L 319 405"
+      ],
+      "color": "yellow",
+      "reveal": "stroke"
+    },
+    {
+      "id": "example-link",
+      "type": "path",
+      "paths": [
+        "M 790 239 L 790 283 Q 790 305 760 305 L 193 305 Q 174 305 174 325 L 174 334 M 163 323 L 174 338 L 185 323"
+      ],
+      "color": "yellow",
+      "reveal": "stroke"
+    },
+    {
+      "id": "summary",
+      "type": "label",
+      "x": 80,
+      "y": 505,
+      "text": "一个问题 → 一张逐步长出来的图",
+      "color": "yellow",
+      "reveal": "word"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "problem",
+      "title": "问题卡在哪里",
+      "items": [
+        {
+          "id": "gap-note",
+          "text": "会用工具，还需要把内容讲清楚"
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "title": "把话一步步画明白",
+      "items": [
+        {
+          "id": "point-note",
+          "text": "先确定一个要讲清的观点"
+        },
+        {
+          "id": "example-note",
+          "text": "再给具体例子，按理解顺序展开"
+        },
+        {
+          "id": "map-note",
+          "text": "回看整张图，把关系连起来"
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "title": "观众应该记住什么",
+      "items": [
+        {
+          "id": "close-note",
+          "text": "人物负责交流，图解解释关系，笔记留下结论"
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "start": 0,
+      "end": 3,
+      "speech": "会用 AI，为什么还是做不出视频？",
+      "anchor": "为什么",
+      "board": {
+        "keep": [],
+        "add": [],
+        "remove": [],
+        "camera": {
+          "x": 0,
+          "y": 0,
+          "scale": 1
+        }
+      },
+      "speaker": {
+        "mode": "full"
+      },
+      "note": {
+        "chapter": "problem",
+        "revealed": [
+          "gap-note"
+        ],
+        "active": "gap-note"
+      },
+      "reason": "开头先让人物提出问题，标题同时让核心问题可读。"
+    },
+    {
+      "id": "show-gap",
+      "start": 3,
+      "end": 8,
+      "speech": "工具会用了，内容却还是讲不清楚。",
+      "anchor": "讲不清楚",
+      "board": {
+        "keep": [],
+        "add": [
+          "tool",
+          "gap",
+          "result",
+          "question"
+        ],
+        "remove": [],
+        "camera": {
+          "x": 0,
+          "y": 0,
+          "scale": 1
+        }
+      },
+      "speaker": {
+        "mode": "top-right"
+      },
+      "note": {
+        "chapter": "problem",
+        "revealed": [
+          "gap-note"
+        ],
+        "active": "gap-note"
+      },
+      "reason": "当前关系在左侧和中部，人物缩到右上，把图解空间让出来。"
+    },
+    {
+      "id": "one-point",
+      "start": 8,
+      "end": 13,
+      "speech": "先确定你要讲清的一个观点。",
+      "anchor": "一个观点",
+      "board": {
+        "keep": [
+          "tool",
+          "gap",
+          "result",
+          "question"
+        ],
+        "add": [
+          "point",
+          "point-link"
+        ],
+        "remove": [],
+        "camera": {
+          "x": -125,
+          "y": 48,
+          "scale": 1.12
+        }
+      },
+      "speaker": {
+        "mode": "middle-left"
+      },
+      "note": {
+        "chapter": "build",
+        "revealed": [
+          "point-note"
+        ],
+        "active": "point-note"
+      },
+      "reason": "新概念长在地图右侧，观察范围移向右侧，人物在左侧中窗交流。"
+    },
+    {
+      "id": "example-order",
+      "start": 13,
+      "end": 19,
+      "speech": "再给一个具体例子，按观众的理解顺序展开。",
+      "anchor": "具体例子",
+      "board": {
+        "keep": [
+          "tool",
+          "gap",
+          "result",
+          "question",
+          "point",
+          "point-link"
+        ],
+        "add": [
+          "example",
+          "order",
+          "order-link",
+          "example-link"
+        ],
+        "remove": [],
+        "camera": {
+          "x": 0,
+          "y": 0,
+          "scale": 1
+        }
+      },
+      "speaker": {
+        "mode": "top-right"
+      },
+      "note": {
+        "chapter": "build",
+        "revealed": [
+          "point-note",
+          "example-note"
+        ],
+        "active": "example-note"
+      },
+      "reason": "展开下方的例子和顺序，笔记上一项变灰，当前项加粗。"
+    },
+    {
+      "id": "overview",
+      "start": 19,
+      "end": 23,
+      "speech": "把前面的内容连起来，再回看这张图。",
+      "anchor": "回看",
+      "board": {
+        "keep": [
+          "tool",
+          "gap",
+          "result",
+          "question",
+          "point",
+          "point-link",
+          "example",
+          "order",
+          "order-link",
+          "example-link"
+        ],
+        "add": [
+          "summary"
+        ],
+        "remove": [],
+        "camera": {
+          "x": 8,
+          "y": 12,
+          "scale": 0.79
+        }
+      },
+      "speaker": {
+        "mode": "bottom-right"
+      },
+      "note": {
+        "chapter": "build",
+        "revealed": [
+          "point-note",
+          "example-note",
+          "map-note"
+        ],
+        "active": "map-note"
+      },
+      "reason": "结束局部解释后回到真实累计地图，让观众看见整体关系。"
+    },
+    {
+      "id": "close",
+      "start": 23,
+      "end": 26,
+      "speech": "人物交流，图解关系，笔记留下结论。",
+      "anchor": "留下结论",
+      "board": {
+        "keep": [
+          "tool",
+          "gap",
+          "result",
+          "question",
+          "point",
+          "point-link",
+          "example",
+          "order",
+          "order-link",
+          "summary",
+          "example-link"
+        ],
+        "add": [],
+        "remove": [],
+        "camera": {
+          "x": 8,
+          "y": 12,
+          "scale": 0.79
+        }
+      },
+      "speaker": {
+        "mode": "full"
+      },
+      "note": {
+        "chapter": "close",
+        "revealed": [
+          "close-note"
+        ],
+        "active": "close-note"
+      },
+      "reason": "结尾把注意力交回讲述者，右侧保留可带走的总结。"
+    }
+  ]
+}

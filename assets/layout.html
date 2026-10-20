@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>画板手绘口播 · 构图编排示意</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#181a1d;color:#ecece7;font-family:system-ui,"PingFang SC","Microsoft YaHei",sans-serif}main{max-width:1320px;margin:24px auto;padding:0 16px}h1{font-size:20px;margin:0 0 8px}.disclosure{font-size:14px;line-height:1.7;color:#bec0c6;margin:0 0 16px}.frame{width:100%;aspect-ratio:16/9;position:relative;overflow:hidden;background:#08090b;border-radius:12px}.stage{position:absolute;width:1280px;height:720px;transform-origin:0 0}.heading{position:absolute;left:20px;top:14px;display:flex;align-items:center;gap:14px;height:34px;font-weight:800;font-size:23px}.badge{background:#f7ce61;color:#101114;padding:5px 10px;border-radius:5px;font-size:17px}.board{position:absolute;left:20px;top:62px;width:956px;height:540px;background:#030404;border-radius:14px;overflow:hidden}.board svg{width:956px;height:540px}.drawing{font-family:"Kaiti SC","KaiTi","Chalkboard SE",cursive;}.speaker{position:absolute;left:20px;top:62px;width:956px;height:540px;transform-origin:0 0;z-index:2;border:3px solid #68645a;border-radius:14px;background:#272c2e;overflow:hidden;display:flex;align-items:center;justify-content:center}.speaker-content{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px}.speaker svg{width:200px;height:180px}.speaker strong{font-size:40px}.speaker small{font-size:23px;color:#c8c5b9}.notes{position:absolute;left:992px;top:62px;width:268px;height:540px;background:#f9f8f1;color:#17191a;padding:20px 17px;border-radius:14px;overflow:hidden}.notes-top{display:flex;align-items:center;justify-content:space-between;font-size:13px;color:#7a7b77}.dots{display:flex;gap:4px}.dot{width:5px;height:5px;border-radius:50%;background:#dddcd6}.dot.done{background:#282b2c}.dot.active{width:16px;background:#e46b61;border-radius:3px}.count{font-size:14px;color:#ce6159;font-weight:800;margin:15px 0 4px}.note-title{font-size:26px;line-height:1.2;font-weight:900;margin:0 0 20px}.note-title:after{content:"";display:block;width:48px;height:3px;margin-top:12px;background:#efd16d}.note-item{position:relative;margin:12px 0;padding-left:16px;font-size:20px;line-height:1.45;color:#92928b}.note-item:before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:#dad9d2}.note-item.active{font-weight:800;color:#17191a}.note-item.active:before{background:#e46b61}.captions{position:absolute;left:30px;right:30px;top:625px;text-align:center;font-size:30px;font-weight:800;line-height:1.35}.caption-help{font-size:16px;color:#b8b9b8;font-weight:500;margin-top:8px}.toolbar{display:flex;gap:12px;align-items:center;margin:18px 0}input[type=range]{flex:1;accent-color:#f7ce61}output{font-variant-numeric:tabular-nums;min-width:94px}select{max-width:50%;padding:8px;background:#24282e;color:#fff;border:1px solid #555;border-radius:6px}#reason{font-size:15px;line-height:1.7;color:#cbd0d6;border-left:3px solid #eac463;padding-left:12px}#error{color:#ffa69c;white-space:pre-wrap}
+@media(min-width:850px){main{max-width:min(1320px,calc((100vh - 235px)*16/9))}}
+</style>
+</head>
+<body>
+<main>
+<h1>画板手绘口播 · 构图与编排示意</h1>
+<p class="disclosure">拖动时间条查看同一张地图如何展开，以及人物窗口、笔记怎样接力。此页没有真人素材、声音或完整笔触动画；仅用于构图讨论，不能当作完成视频。</p>
+<div class="frame" id="frame"><div class="stage" id="stage">
+  <div class="heading"><span class="badge" id="series"></span><span id="title"></span></div>
+  <div class="board"><svg viewBox="0 0 956 540" aria-label="逐步建立的知识地图"><g id="camera"></g></svg></div>
+  <div class="speaker" id="speaker"><div class="speaker-content">
+    <svg viewBox="0 0 200 180" aria-hidden="true"><g fill="none" stroke="#eee8d8" stroke-width="4" stroke-linecap="round"><path d="M 100 20 C 65 18 61 68 99 73 C 133 75 139 21 100 20 M 99 74 L 98 131 M 98 93 L 57 116 M 98 93 L 141 113 M 98 131 L 70 164 M 98 131 L 128 164"/></g></svg>
+    <strong>真人口播位置</strong><small>生产时替换为实际录像</small>
+  </div></div>
+  <aside class="notes" aria-label="中文笔记"><div class="notes-top"><span>本期笔记</span><div class="dots" id="dots"></div></div><div class="count" id="count"></div><h2 class="note-title" id="note-title"></h2><div id="items"></div></aside>
+  <div class="captions"><div id="caption"></div><div class="caption-help">此处展示示意语句；生产字幕按真实录音对齐，中英版本按需求制作</div></div>
+</div></div>
+<div class="toolbar"><label for="time">观察位置</label><input id="time" type="range" min="0" step="0.1" value="0"><output id="clock"></output><select id="beat" aria-label="选择语义段"></select></div>
+<p id="reason"></p><p id="error" role="alert"></p>
+</main>
+<script>
+'use strict';
+const ns='http://www.w3.org/2000/svg';
+const byId=id=>document.getElementById(id);
+const colors={white:'#f0efe5',yellow:'#f3c55e',red:'#ec786b'};
+const layouts={full:{x:0,y:0,s:1},'top-right':{x:706,y:20,s:0.245},'bottom-right':{x:706,y:389,s:0.245},'middle-left':{x:24,y:176,s:0.45}};
+function svg(tag,attrs){const el=document.createElementNS(ns,tag);for(const[k,v]of Object.entries(attrs))el.setAttribute(k,String(v));return el;}
+function nodeFor(e){
+  const g=svg('g',{'data-element':e.id});const ink=colors[e.color]||colors.white;
+  if(e.type==='path'){for(const d of e.paths)g.append(svg('path',{d,fill:'none',stroke:ink,'stroke-width':3.2,'stroke-linecap':'round','stroke-linejoin':'round'}));}
+  if(e.type==='card'){
+    const{x,y,w,h}=e;g.append(svg('path',{d:`M ${x+4} ${y+3} Q ${x+w/2} ${y-2} ${x+w-3} ${y+2} L ${x+w+1} ${y+h-4} Q ${x+w/2} ${y+h+3} ${x+2} ${y+h} Z`,fill:'none',stroke:ink,'stroke-width':3,'stroke-linejoin':'round'}));
+    const t=svg('text',{x:x+w/2,y:y+h/2+10,'text-anchor':'middle',fill:ink,'font-size':29,class:'drawing'});t.textContent=e.text;g.append(t);
+  }
+  if(e.type==='label'){const t=svg('text',{x:e.x,y:e.y,fill:ink,'font-size':31,class:'drawing'});t.textContent=e.text;g.append(t);}
+  return g;
+}
+function size(){byId('stage').style.transform=`scale(${byId('frame').clientWidth/1280})`;}
+async function init(){
+  const response=await fetch('./plan.example.json');if(!response.ok)throw new Error(`无法读取计划：${response.status}`);const plan=await response.json();
+  byId('series').textContent=plan.series;byId('title').textContent=plan.title;byId('time').max=String(plan.duration);
+  if(plan.elements.some(e=>!['card','label','path'].includes(e.type)))throw new Error('示意模板仅实现 card / label / path，其他对象须在生产工程中实现');
+  const nodes=new Map(plan.elements.map(e=>[e.id,nodeFor(e)]));for(const el of nodes.values())byId('camera').append(el);
+  const states=[];let visible=new Set();for(const beat of plan.beats){visible=new Set(beat.board.keep);for(const id of beat.board.add)visible.add(id);for(const id of beat.board.remove)visible.delete(id);states.push(new Set(visible));}
+  plan.beats.forEach((b,i)=>{const o=document.createElement('option');o.value=String(i);o.textContent=`${b.start}s · ${b.id}`;byId('beat').append(o);});
+  function show(t){
+    const i=Math.max(0,plan.beats.findLastIndex(b=>b.start<=t));const b=plan.beats[i];
+    for(const[id,el]of nodes)el.style.display=states[i].has(id)?'':'none';
+    const c=b.board.camera;byId('camera').setAttribute('transform',`translate(${c.x} ${c.y}) scale(${c.scale})`);
+    const mode=b.speaker.mode;const speaker=byId('speaker');speaker.style.display=mode==='none'?'none':'flex';speaker.style.width='956px';speaker.style.height='540px';
+    if(mode==='custom'){const r=b.speaker.rect;speaker.style.width=`${r.w}px`;speaker.style.height=`${r.h}px`;speaker.style.transform=`translate(${r.x}px,${r.y}px)`;}else if(mode!=='none'){const l=layouts[mode];if(!l)throw new Error(`示意模板没有人物模式 ${mode}`);speaker.style.transform=`translate(${l.x}px,${l.y}px) scale(${l.s})`;}
+    const ci=plan.chapters.findIndex(c=>c.id===b.note.chapter),chapter=plan.chapters[ci];
+    byId('count').textContent=`${String(ci+1).padStart(2,'0')} / ${String(plan.chapters.length).padStart(2,'0')}`;byId('note-title').textContent=chapter.title;
+    byId('dots').replaceChildren(...plan.chapters.map((_,j)=>{const d=document.createElement('span');d.className='dot'+(j===ci?' active':j<ci?' done':'');return d;}));
+    byId('items').replaceChildren(...b.note.revealed.map(id=>{const item=chapter.items.find(it=>it.id===id);const p=document.createElement('p');p.className='note-item'+(id===b.note.active?' active':'');p.textContent=item.text;return p;}));
+    byId('caption').textContent=b.speech;byId('clock').textContent=`${t.toFixed(1)} / ${plan.duration}s`;byId('beat').value=String(i);byId('reason').textContent=b.reason;
+  }
+  byId('time').addEventListener('input',e=>show(Number(e.target.value)));
+  byId('beat').addEventListener('change',e=>{const t=plan.beats[Number(e.target.value)].start;byId('time').value=String(t);show(t);});
+  new ResizeObserver(size).observe(byId('frame'));size();show(0);
+}
+init().catch(e=>{byId('error').textContent=`${e.message}\n请在 Skill 目录启动本地服务，再访问 /assets/layout.html；不要直接双击 file:// 页面。`;});
+</script>
+</body>
+</html>

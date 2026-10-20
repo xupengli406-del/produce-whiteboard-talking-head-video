@@ -1,0 +1,4 @@
+interface:
+  display_name: "画板手绘风格口播视频"
+  short_description: "用手绘黑板一步步讲明白，编排真人口播窗口、中文笔记与字幕的配合时机"
+  default_prompt: "用 $produce-whiteboard-talking-head-video 把这段内容或录像做成接地气的画板手绘风格口播视频，保留真实原声，按语义安排人物窗口、板书和中文笔记。"
