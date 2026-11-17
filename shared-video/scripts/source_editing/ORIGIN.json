@@ -1,0 +1,49 @@
+{
+  "repository": "https://github.com/xupengli406-del/claude-skills",
+  "revision": "dade8c1ec9615bc52cd142890d99a8b6e55194bd",
+  "original_files": [
+    {
+      "path": "video-editor/SKILL.md",
+      "sha256": "e622f5a8f224e7b26fa8df3b99a3f8915045f4fc4e777cb838ba50580d6a932e",
+      "bytes": 5703,
+      "source_url": "https://github.com/xupengli406-del/claude-skills/blob/dade8c1ec9615bc52cd142890d99a8b6e55194bd/video-editor/SKILL.md"
+    },
+    {
+      "path": "video-editor/scripts/README.md",
+      "sha256": "a32edd6b43b9998110822729093298073c386690c3b5a9b5bcf2bf11625abdc1",
+      "bytes": 603,
+      "source_url": "https://github.com/xupengli406-del/claude-skills/blob/dade8c1ec9615bc52cd142890d99a8b6e55194bd/video-editor/scripts/README.md"
+    },
+    {
+      "path": "video-editor/scripts/burn_subtitles.py",
+      "sha256": "3fef7142c726a0ebd719bdd0e0bdcc8be0fda3d16e90c2368309014fce43efc8",
+      "bytes": 1448,
+      "source_url": "https://github.com/xupengli406-del/claude-skills/blob/dade8c1ec9615bc52cd142890d99a8b6e55194bd/video-editor/scripts/burn_subtitles.py"
+    },
+    {
+      "path": "video-editor/scripts/edit_video.py",
+      "sha256": "55ef18d1838d16a3af60f341ee4494465063ad71dc260473892345993c8bb31d",
+      "bytes": 3312,
+      "source_url": "https://github.com/xupengli406-del/claude-skills/blob/dade8c1ec9615bc52cd142890d99a8b6e55194bd/video-editor/scripts/edit_video.py"
+    },
+    {
+      "path": "video-editor/scripts/generate_srt.py",
+      "sha256": "8d49d74050be3ef12057d93472ac2008be834ac62365cfbd0e4281c53d865d24",
+      "bytes": 2488,
+      "source_url": "https://github.com/xupengli406-del/claude-skills/blob/dade8c1ec9615bc52cd142890d99a8b6e55194bd/video-editor/scripts/generate_srt.py"
+    },
+    {
+      "path": "video-editor/scripts/transcribe.py",
+      "sha256": "c695380202f2259dc078b9cdf2da7dfe20b2253a93c2250c0f9e2b6a5fb29df1",
+      "bytes": 1569,
+      "source_url": "https://github.com/xupengli406-del/claude-skills/blob/dade8c1ec9615bc52cd142890d99a8b6e55194bd/video-editor/scripts/transcribe.py"
+    }
+  ],
+  "license": "No upstream LICENSE found at the repository root or video-editor directory at this revision. No MIT grant is inferred for these imported templates. Preserve the original attribution; distribution rights require the owner’s authorization.",
+  "adaptation": [
+    "Output paths resolve from cwd or explicit --workdir, never __file__.",
+    "No import-time directory creation, model loading or FFmpeg execution.",
+    "Shared clips.json drives FFmpeg editing and SRT mapping; Whisper word timestamps and Chinese transcription retained.",
+    "Added dry-run for path/command verification without rendering or downloading a model."
+  ]
+}

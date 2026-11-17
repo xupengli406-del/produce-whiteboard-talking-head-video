@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "source_type": "user_authorized_method",
+  "authorized_on": "2026-10-15",
+  "source_description": "用户在当前制作复盘中明确要求纳入的可执行方法，非参考作者可见证据。",
+  "methods": [
+    {"id": "V30", "request": "当有明确的步骤的时候，那个全屏文字蒙版这个也加进去。"},
+    {"id": "V31", "request": "还有跟随鼠标做视觉重心的那个动效也加进去。"}
+  ]
+}

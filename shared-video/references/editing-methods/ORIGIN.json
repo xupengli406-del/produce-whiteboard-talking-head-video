@@ -1,0 +1,39 @@
+{
+  "kind": "internal editing methods; no standalone Skill entry",
+  "source_author_edition": "current installed author edition; exact input bytes preserved by the maintenance before-state",
+  "upstream_repository": "https://github.com/xupengli406-del/claude-skills",
+  "upstream_path": "web-sense-video-editing",
+  "methods": 39,
+  "recipes": 8,
+  "user_authorized_methods": [
+    "V30",
+    "V31"
+  ],
+  "reference_author": "凌川屿｜剪辑师",
+  "reference_url": "https://www.douyin.com/video/7693904484166094089",
+  "reference_media_license": "Reference media are analysis evidence, not user footage or MIT assets; not bundled in this portable Skill.",
+  "evidence_input": "Provide the 14 original files listed by cases/lc-vol12/coverage.json through --evidence-root to verify their original hashes.",
+  "input_hashes": {
+    "SKILL.md": "4358b9b10d0df72a23e5f357785331a8da34f435a0f5aa80e69933057cccaf26",
+    "agents/openai.yaml": "6e5e0b1eabf5757da32d55404acd064f6d3e3906c204195e27ac823febf847ff",
+    "assets/inline-emphasis.mjs": "fa127723d806241d7c0eb2d073a1c7d16dcbe4c3774fd5436707cf60a20efa2e",
+    "references/cases/lc-vol12/case.md": "ee5359b3cf5a56c9a222e114299a1937ef276a7fdcc3cbec22e659d4224c867b",
+    "references/cases/lc-vol12/coverage.json": "b64b9621d7ac2d21f34ad1fd0f88a9fc30fa8f0a5193d88eeb88d1672aa0dd03",
+    "references/collection.md": "a41924105ca959e3ebfe6359509a5a7984c3859d5eea12e34982b8481a0d78a8",
+    "references/edit-plan.example.json": "a3c6d67b59e346072e553ee07d8fed240143c069b55aabeddb9b6d97fda64cb5",
+    "references/execution.md": "46c7ca883221e0294d88d268cc396be074b8f17d7adbb5139e35a1dd72853bbf",
+    "references/implementation.md": "2ed7a3ef54e817bb46007fe8c684675dc4df4cd1329c81630bf1527d86d66f71",
+    "references/index.md": "5817a7fa0349e8eebf74979ca9bfbecfdc58fe4f165af64ec3273d04c6557893",
+    "references/inline-emphasis.md": "fe65977aa9a24e61e272368bffa6ce7109dac28de8d4fab722c2ac1dbd6213fb",
+    "references/method-contracts.json": "0d9c8ac84056aa4c457490ed89df46356fef90c03b8243adc662f8cbb08e6e96",
+    "references/picture.md": "7a7fe4a51de1df1bb626dfadaaa63f1927c51cadcce4b1d84f0f53a0bccd68e5",
+    "references/recipes.md": "03721cb8bf58d7b44fdca338ee67f9e84a67f9bc4dd851bc4051109de0dbc5a5",
+    "references/reference-acquisition.md": "a0d05b9e014adb8b0f6cd3f90c373ea3ac86a8435e961f15cab2cd066a8118a3",
+    "references/sound.md": "db3ca3add4414744a0dcf57efc0d2ec45480c0daf7a76a68dcb11d89ea6b7ef1",
+    "references/text.md": "c1f5b2408836d48adffd83de71162de43aef2eb04d40ca61a32d14066f482a6a",
+    "references/user-authorized-methods.json": "ab31b08db6b7d920484cfefbd8d416b2519121ce88aad85edbad01d781c7eace",
+    "scripts/check_library.py": "688e4e5007afa631d6951091d5aa926d41bf467f9061b98884ef2853d85deaad",
+    "scripts/test_inline_emphasis.mjs": "9f776f51797874b8a421c4b0545f1892133ae5f3f2189b949bab7e46b82409fb",
+    "scripts/validate_edit_plan.py": "2f8eee15c49b84547807f2a4a6be4b06d894935542e2bdfa88ad1554769987ce"
+  }
+}

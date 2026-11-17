@@ -1,0 +1,195 @@
+{
+  "files": {
+    "assets/inline-emphasis.mjs": {
+      "bytes": 3189,
+      "sha256": "fa127723d806241d7c0eb2d073a1c7d16dcbe4c3774fd5436707cf60a20efa2e"
+    },
+    "references/audio-state-and-mapping.md": {
+      "bytes": 2116,
+      "sha256": "5e72a251275aba69a48950a46a1004b6814a27cf837beaa19ca67a9e660ba926"
+    },
+    "references/bilingual-subtitles.md": {
+      "bytes": 4053,
+      "sha256": "3464914f5b4fec396e24460e0e727ea5783a123ac9615626cacc4266fbc9682d"
+    },
+    "references/covers-and-release.md": {
+      "bytes": 9944,
+      "sha256": "6e014923c0a8e2258d78fe96c03d6c1de4c3fa6cd79132a679960f6816f06f00"
+    },
+    "references/editing-and-audio.md": {
+      "bytes": 5463,
+      "sha256": "5e7eccf0fbb921910596a1b011b83dda66b5807b3512e034637bca260bb8d4c6"
+    },
+    "references/editing-methods/ORIGIN.json": {
+      "bytes": 2981,
+      "sha256": "d436185fa2b9b880e17a7694b8198f8b8074539c71c9a6bee8803d8a878fad57"
+    },
+    "references/editing-methods/cases/lc-vol12/case.md": {
+      "bytes": 6877,
+      "sha256": "48cc17c7725aec2474847ea2f7d0775c5b8248ad896137c963e2be99e64fecaa"
+    },
+    "references/editing-methods/cases/lc-vol12/coverage.json": {
+      "bytes": 8745,
+      "sha256": "b64b9621d7ac2d21f34ad1fd0f88a9fc30fa8f0a5193d88eeb88d1672aa0dd03"
+    },
+    "references/editing-methods/collection.md": {
+      "bytes": 3879,
+      "sha256": "a41924105ca959e3ebfe6359509a5a7984c3859d5eea12e34982b8481a0d78a8"
+    },
+    "references/editing-methods/edit-plan.example.json": {
+      "bytes": 2591,
+      "sha256": "f7d86e717b19d547c354ea835cf8308a4f1c19c3bb741af65805d3f091de5499"
+    },
+    "references/editing-methods/execution.md": {
+      "bytes": 7839,
+      "sha256": "13a6a62d0bef27f198582acc80167993a54cdc1176fe0acf4ec52bf40e875eeb"
+    },
+    "references/editing-methods/implementation.md": {
+      "bytes": 6836,
+      "sha256": "2ed7a3ef54e817bb46007fe8c684675dc4df4cd1329c81630bf1527d86d66f71"
+    },
+    "references/editing-methods/index.md": {
+      "bytes": 4721,
+      "sha256": "5817a7fa0349e8eebf74979ca9bfbecfdc58fe4f165af64ec3273d04c6557893"
+    },
+    "references/editing-methods/inline-emphasis.md": {
+      "bytes": 2314,
+      "sha256": "879594f6d8b8825811500924e60b529afde3104d9aceb1340a794c3108db2f9b"
+    },
+    "references/editing-methods/method-contracts.json": {
+      "bytes": 3548,
+      "sha256": "0d9c8ac84056aa4c457490ed89df46356fef90c03b8243adc662f8cbb08e6e96"
+    },
+    "references/editing-methods/picture.md": {
+      "bytes": 14950,
+      "sha256": "83ab17c39fd7334969e8b1fba61ee53785c530dd773663c35e48e39e8a7e416e"
+    },
+    "references/editing-methods/recipes.md": {
+      "bytes": 5904,
+      "sha256": "03721cb8bf58d7b44fdca338ee67f9e84a67f9bc4dd851bc4051109de0dbc5a5"
+    },
+    "references/editing-methods/reference-acquisition.md": {
+      "bytes": 3405,
+      "sha256": "5c67d579cb7a4281a0eab073afc85fef1532bbd91ae2b88db465add36fcd4012"
+    },
+    "references/editing-methods/sound.md": {
+      "bytes": 5984,
+      "sha256": "4321a7b9ca2da1b7f810c76d83bdeb92eca7415402f3fdf8db09c04cf3f3d4eb"
+    },
+    "references/editing-methods/text.md": {
+      "bytes": 11471,
+      "sha256": "24d7aaa06b957e31129d8e6353b5a8a7beba09dc9adfd222f9e724946ad151e0"
+    },
+    "references/editing-methods/user-authorized-methods.json": {
+      "bytes": 457,
+      "sha256": "ab31b08db6b7d920484cfefbd8d416b2519121ce88aad85edbad01d781c7eace"
+    },
+    "references/four-platform-delivery.md": {
+      "bytes": 5665,
+      "sha256": "d21c1dea0398638f252a1f0ae8830af4df9fe91f2d4313c0a27b00e60d765443"
+    },
+    "references/icon-motion-design.md": {
+      "bytes": 12860,
+      "sha256": "d6cdf2490db64fca32eda9077b9de42e572852575263f8a6fdc7df34df5ac595"
+    },
+    "references/opening-and-retention.md": {
+      "bytes": 8850,
+      "sha256": "e7ba4f47144616c9a9d2e620f31e34cac2972907e0a032c2b1fa062f22124de0"
+    },
+    "references/performance-review.md": {
+      "bytes": 7780,
+      "sha256": "7f620fe8fd342da0ea6175806ee76aa4650c9e07aad88ccf3c4a9ddf3c992e04"
+    },
+    "references/quality-standards.md": {
+      "bytes": 1560,
+      "sha256": "d9e962b96fce89df6c5b7692022e78c7e63d1e31ecb2e9f636c9403a37976171"
+    },
+    "references/review-and-handoff.md": {
+      "bytes": 7348,
+      "sha256": "bb28ec782221e456993b41a1adc2fd8c93b21af3c096099f5a1d7b8f4e99d9f2"
+    },
+    "references/scriptwriting.md": {
+      "bytes": 9585,
+      "sha256": "23b9b39fffddf0dcd634a87b28900345cc9d179e5727ec19d0e2a7e2fd330918"
+    },
+    "references/source-editing.md": {
+      "bytes": 3054,
+      "sha256": "3fc8d6b918b872a751357db2b52b8021d73bacb8c5f8aafdaf50b6715ff7117b"
+    },
+    "references/subtitles-and-motion.md": {
+      "bytes": 11899,
+      "sha256": "9328f8429e648bcde4f8f7aa5e089cd60c2d221aebcfffeac6e738b284c7b5a6"
+    },
+    "references/visual-principles.md": {
+      "bytes": 16864,
+      "sha256": "08cf57d88eb296e12e4911587baa7bd5af9d2c8f7f9033af01aaba1ddb19b282"
+    },
+    "references/visual-rhythm-treatments.md": {
+      "bytes": 4772,
+      "sha256": "6b40bc5ea037cfa676660010ab0bb1edce00945f560ad3c1f90914cf9cd11524"
+    },
+    "references/visual-rhythm.LICENSE.txt": {
+      "bytes": 1072,
+      "sha256": "d1454026e8f4f9a9d8d9ca6824571324e464a47d41209639640f4aa89fa54cc8"
+    },
+    "references/visual-rhythm.md": {
+      "bytes": 6125,
+      "sha256": "b7f6d5ace320dc0ae53819d8db7e0892e7e831849670ffd2de0bf7c1360c50bf"
+    },
+    "scripts/check_editing_methods.py": {
+      "bytes": 5030,
+      "sha256": "674bf6105845eebb7adccdf2e6c5a05751af73f97b3678eab25095a3f0d49511"
+    },
+    "scripts/prepare_bilingual_subtitles.py": {
+      "bytes": 14724,
+      "sha256": "069287a29d1c9e9170a426e332422330547738bc345e51effc341f8268e3bccb"
+    },
+    "scripts/source_editing/ORIGIN.json": {
+      "bytes": 2712,
+      "sha256": "75bffe846e4bc182462217eb6ab87fc68c5e43630bcaea5609bbc5967a013fb2"
+    },
+    "scripts/source_editing/README.md": {
+      "bytes": 2325,
+      "sha256": "17fed2d3a2bf4e75b4927a3fd89dd0e86af80089e79a39a795715e9bea7957c6"
+    },
+    "scripts/source_editing/burn_subtitles.py": {
+      "bytes": 1788,
+      "sha256": "ef0deda034346317fb04dd928ad883689a02e0c42b847fd69db679fe01e6cc90"
+    },
+    "scripts/source_editing/common.py": {
+      "bytes": 1688,
+      "sha256": "ceff9ac25af0b5bd7210763efe1c156138735f34baa029fdd95238c1e275e6e2"
+    },
+    "scripts/source_editing/edit_video.py": {
+      "bytes": 3246,
+      "sha256": "1f7ac63eb04ed7fcc9ae4af267a34c0198eb69e32c3fe0bfca3e5a95828920e8"
+    },
+    "scripts/source_editing/generate_srt.py": {
+      "bytes": 2775,
+      "sha256": "7d37ecae5400a71e37b632f2291c6105a2fbbccc53c2d899caa4ec17d2e832c9"
+    },
+    "scripts/source_editing/transcribe.py": {
+      "bytes": 2555,
+      "sha256": "422bb49c82340ff1bdf73ed57fd1764ac0a46265ece52bebeef9e6773ab70224"
+    },
+    "scripts/sync_shared_video.py": {
+      "bytes": 14163,
+      "sha256": "b819962c332fec5c1e63fe8087991c8c0e9036273077d768f3ba47dec9e2bde9"
+    },
+    "scripts/test_inline_emphasis.mjs": {
+      "bytes": 6684,
+      "sha256": "9f776f51797874b8a421c4b0545f1892133ae5f3f2189b949bab7e46b82409fb"
+    },
+    "scripts/test_prepare_bilingual_subtitles.py": {
+      "bytes": 12001,
+      "sha256": "f98b3a7ceea37527843f870e072e78b386a09d1692ccb0860948c162ec57d8c4"
+    },
+    "scripts/validate_edit_plan.py": {
+      "bytes": 13585,
+      "sha256": "4aaec8bacc85d4912e9bf5da2d60680d438cc3508ec3e04d298df656e846d57f"
+    }
+  },
+  "profile": "publication",
+  "schema": 1,
+  "source_key": "edit-talking-head-social-video"
+}

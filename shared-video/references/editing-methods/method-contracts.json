@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "methods": {
+    "S01": {
+      "targets": [
+        "audio"
+      ],
+      "requires_asset": true
+    },
+    "S02": {
+      "targets": [
+        "audio"
+      ],
+      "requires_asset": true
+    },
+    "S03": {
+      "targets": [
+        "audio"
+      ],
+      "requires_asset": true
+    },
+    "S04": {
+      "targets": [
+        "audio"
+      ],
+      "requires_asset": true
+    },
+    "S05": {
+      "targets": [
+        "audio"
+      ],
+      "requires_asset": true
+    },
+    "S06": {
+      "targets": [
+        "audio"
+      ],
+      "requires_asset": true
+    },
+    "S07": {
+      "targets": [
+        "audio"
+      ],
+      "requires_asset": true
+    },
+    "S08": {
+      "targets": [
+        "audio"
+      ],
+      "requires_asset": true
+    },
+    "V01": {
+      "targets": [
+        "text"
+      ]
+    },
+    "V02": {
+      "targets": [
+        "text"
+      ]
+    },
+    "V03": {
+      "targets": [
+        "text"
+      ]
+    },
+    "V04": {
+      "targets": [
+        "text"
+      ]
+    },
+    "V05": {
+      "targets": [
+        "text"
+      ]
+    },
+    "V06": {
+      "targets": [
+        "text"
+      ]
+    },
+    "V07": {
+      "targets": [
+        "overlay"
+      ]
+    },
+    "V08": {
+      "targets": [
+        "media",
+        "media_group"
+      ]
+    },
+    "V09": {
+      "targets": [
+        "media",
+        "foreground"
+      ]
+    },
+    "V10": {
+      "targets": [
+        "foreground"
+      ],
+      "requires_alpha": true
+    },
+    "V11": {
+      "targets": [
+        "media_group"
+      ],
+      "requires_foreground_layers": true
+    },
+    "V12": {
+      "targets": [
+        "media",
+        "media_group"
+      ]
+    },
+    "V13": {
+      "targets": [
+        "overlay"
+      ]
+    },
+    "V14": {
+      "targets": [
+        "media",
+        "media_group"
+      ]
+    },
+    "V15": {
+      "targets": [
+        "text"
+      ]
+    },
+    "V16": {
+      "targets": [
+        "media",
+        "media_group",
+        "overlay"
+      ],
+      "preset_name": "拉框入屏"
+    },
+    "V17": {
+      "targets": [
+        "media",
+        "media_group",
+        "text"
+      ],
+      "preset_name": "汇聚"
+    },
+    "V18": {
+      "targets": [
+        "media",
+        "media_group"
+      ]
+    },
+    "V19": {
+      "targets": [
+        "media"
+      ]
+    },
+    "V20": {
+      "targets": [
+        "media"
+      ],
+      "requires_freeze": true
+    },
+    "V21": {
+      "targets": [
+        "media"
+      ],
+      "requires_freeze": true
+    },
+    "V22": {
+      "targets": [
+        "media",
+        "media_group"
+      ]
+    },
+    "V23": {
+      "targets": [
+        "text"
+      ],
+      "preset_name": "向右模糊 II"
+    },
+    "V24": {
+      "targets": [
+        "text"
+      ],
+      "inline_caption_end_behavior": "hold-until-caption-exit"
+    },
+    "V25": {
+      "targets": [
+        "text",
+        "overlay"
+      ]
+    },
+    "V26": {
+      "targets": [
+        "text"
+      ]
+    },
+    "V27": {
+      "targets": [
+        "media",
+        "media_group"
+      ]
+    },
+    "V28": {
+      "targets": [
+        "text",
+        "overlay"
+      ]
+    },
+    "V29": {
+      "targets": [
+        "text"
+      ]
+    },
+    "V30": {
+      "targets": [
+        "text",
+        "overlay",
+        "media_group"
+      ],
+      "origin": "user_authorized_method",
+      "requires_real_steps": true
+    },
+    "V31": {
+      "targets": [
+        "media",
+        "media_group"
+      ],
+      "origin": "user_authorized_method",
+      "requires_real_target": true
+    }
+  }
+}

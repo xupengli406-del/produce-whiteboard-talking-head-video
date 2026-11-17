@@ -1,0 +1,371 @@
+{
+  "case_id": "lc-vol12",
+  "title": "Vol.12推荐网感博主 谢欣彤 #谢欣彤 #剪辑接单 #剪辑教程 #网感剪辑 #剪辑拆解",
+  "url": "https://www.douyin.com/video/7693904484166094089",
+  "author": "凌川屿｜剪辑师",
+  "duration_ms": 21134,
+  "source_created_at": "2026-10-07T12:39:03Z",
+  "captured_at": "2026-10-08T08:52:32.655504Z",
+  "media_files": [
+    {
+      "path": "frames/00.50.jpg",
+      "sha256": "470e2dd089cca8dbad507e26112bf821a279e2363ac925cf35ef5832e637b917"
+    },
+    {
+      "path": "frames/02.50.jpg",
+      "sha256": "0a78dc60c4c1ddb7adb7fca702bace1727a772eabb0fc61d1d21983c81f9cdd2"
+    },
+    {
+      "path": "frames/03.50.jpg",
+      "sha256": "12c570634836e5771a879a1f24a2cf628d16e533cf7c233aae54a2f89268d8ae"
+    },
+    {
+      "path": "frames/04.50.jpg",
+      "sha256": "a119b4f876fc52ba5e3a88a76ef5d3a68896037bcb5474dcde59534eff581a33"
+    },
+    {
+      "path": "frames/05.50.jpg",
+      "sha256": "6fb066ed6f74ce925f4f226a6444a5e4faaefdc8c05b8cc32392c12cdd465f9c"
+    },
+    {
+      "path": "frames/06.50.jpg",
+      "sha256": "76ebf684ddd11497fec83fd00bce3b78c34b6fb1b821419f7adc21131d30103a"
+    },
+    {
+      "path": "frames/10.50.jpg",
+      "sha256": "44318e09ea60af69ec0dade707063bc65083d8fbb54caf151b77f2908dd523e6"
+    },
+    {
+      "path": "frames/12.50.jpg",
+      "sha256": "bcfde560a8a47dbda57c07d5e1c8c91a4aa7dda7cf54070d9fea7d74742b4b9b"
+    },
+    {
+      "path": "frames/14.50.jpg",
+      "sha256": "242a977d1f5169745281929f1d53441c52b2d3790847e4646764467fb6f6fc54"
+    },
+    {
+      "path": "frames/15.50.jpg",
+      "sha256": "c4dbe33ced49c80c455fb4956abaadc17bf2f91d20bb7219b729540f31dea35c"
+    },
+    {
+      "path": "frames/16.50.jpg",
+      "sha256": "61f96db0d6535f4989c37fa6626b2f659ede614908d6d27be8db432e1b4681a5"
+    },
+    {
+      "path": "frames/17.50.jpg",
+      "sha256": "408744ae2da990b1d76df83d09953ceff40f1a9d650bd27f0657630706ab89c6"
+    },
+    {
+      "path": "frames/20.50.jpg",
+      "sha256": "445b4960994ed68690fea316d43be2fc562d81d87bbffc4b465f73fc15eb9714"
+    },
+    {
+      "path": "source.mp4",
+      "sha256": "500a37546aa9689df0c4fcd7205027f869040f6ea0f02d0f22c29900537293a1"
+    }
+  ],
+  "annotations": [
+    {
+      "label": "字体：特黑体",
+      "technique_ids": [
+        "V01"
+      ],
+      "time_seconds": 0.5,
+      "snapshot": "frames/00.50.jpg"
+    },
+    {
+      "label": "字体：特黑体＋阴影",
+      "technique_ids": [
+        "V02"
+      ],
+      "time_seconds": 0.5,
+      "snapshot": "frames/00.50.jpg"
+    },
+    {
+      "label": "字体：特黑体＋描边",
+      "technique_ids": [
+        "V03"
+      ],
+      "time_seconds": 4.5,
+      "snapshot": "frames/04.50.jpg"
+    },
+    {
+      "label": "放大",
+      "technique_ids": [
+        "V04"
+      ],
+      "time_seconds": 0.5,
+      "snapshot": "frames/00.50.jpg"
+    },
+    {
+      "label": "向上露出",
+      "technique_ids": [
+        "V05"
+      ],
+      "time_seconds": 2.5,
+      "snapshot": "frames/02.50.jpg"
+    },
+    {
+      "label": "心跳",
+      "technique_ids": [
+        "V06"
+      ],
+      "time_seconds": 2.5,
+      "snapshot": "frames/02.50.jpg"
+    },
+    {
+      "label": "缤纷烟花",
+      "technique_ids": [
+        "V07"
+      ],
+      "time_seconds": 2.5,
+      "snapshot": "frames/02.50.jpg"
+    },
+    {
+      "label": "关键帧 缩小",
+      "technique_ids": [
+        "V08"
+      ],
+      "time_seconds": 2.5,
+      "snapshot": "frames/02.50.jpg"
+    },
+    {
+      "label": "复制原视频",
+      "technique_ids": [
+        "V09"
+      ],
+      "time_seconds": 2.5,
+      "snapshot": "frames/02.50.jpg"
+    },
+    {
+      "label": "人物抠像",
+      "technique_ids": [
+        "V10"
+      ],
+      "time_seconds": 2.5,
+      "snapshot": "frames/02.50.jpg"
+    },
+    {
+      "label": "字体放抠像轨道下层",
+      "technique_ids": [
+        "V11"
+      ],
+      "time_seconds": 2.5,
+      "snapshot": "frames/02.50.jpg"
+    },
+    {
+      "label": "关键帧 放大／画面关键帧放大",
+      "technique_ids": [
+        "V12"
+      ],
+      "time_seconds": 4.5,
+      "snapshot": "frames/04.50.jpg"
+    },
+    {
+      "label": "扩音器",
+      "technique_ids": [
+        "V13"
+      ],
+      "time_seconds": 4.5,
+      "snapshot": "frames/04.50.jpg"
+    },
+    {
+      "label": "圆形蒙版",
+      "technique_ids": [
+        "V14"
+      ],
+      "time_seconds": 5.5,
+      "snapshot": "frames/05.50.jpg"
+    },
+    {
+      "label": "左上弹入",
+      "technique_ids": [
+        "V15"
+      ],
+      "time_seconds": 5.5,
+      "snapshot": "frames/05.50.jpg"
+    },
+    {
+      "label": "拉框入屏",
+      "technique_ids": [
+        "V16"
+      ],
+      "time_seconds": 6.5,
+      "snapshot": "frames/06.50.jpg",
+      "note": "预设名称明确；完整中间运动与目标对象需在工具中再核对。"
+    },
+    {
+      "label": "汇聚",
+      "technique_ids": [
+        "V17"
+      ],
+      "time_seconds": 10.5,
+      "snapshot": "frames/10.50.jpg",
+      "note": "预设名称明确；完整中间运动与目标对象需在工具中再核对。"
+    },
+    {
+      "label": "矩形蒙版",
+      "technique_ids": [
+        "V18"
+      ],
+      "time_seconds": 12.5,
+      "snapshot": "frames/12.50.jpg"
+    },
+    {
+      "label": "画面 硬切",
+      "technique_ids": [
+        "V19"
+      ],
+      "time_seconds": 15.5,
+      "snapshot": "frames/15.50.jpg"
+    },
+    {
+      "label": "画面 定格",
+      "technique_ids": [
+        "V20"
+      ],
+      "time_seconds": 20.5,
+      "snapshot": "frames/20.50.jpg"
+    },
+    {
+      "label": "画面 定格 放大",
+      "technique_ids": [
+        "V21"
+      ],
+      "time_seconds": 20.5,
+      "snapshot": "frames/20.50.jpg"
+    },
+    {
+      "label": "画面调节色度",
+      "technique_ids": [
+        "V22"
+      ],
+      "time_seconds": 20.5,
+      "snapshot": "frames/20.50.jpg"
+    },
+    {
+      "label": "向右模糊 II",
+      "technique_ids": [
+        "V23"
+      ],
+      "time_seconds": 20.5,
+      "snapshot": "frames/20.50.jpg"
+    },
+    {
+      "label": "表示向上上升的",
+      "technique_ids": [
+        "S01"
+      ],
+      "time_seconds": 0.5,
+      "snapshot": "frames/00.50.jpg"
+    },
+    {
+      "label": "吹哨子 集合",
+      "technique_ids": [
+        "S02"
+      ],
+      "time_seconds": 3.5,
+      "snapshot": "frames/03.50.jpg"
+    },
+    {
+      "label": "桌铃音效 取餐铃",
+      "technique_ids": [
+        "S03"
+      ],
+      "time_seconds": 4.5,
+      "snapshot": "frames/04.50.jpg"
+    },
+    {
+      "label": "欢呼类短音（卡片名称字形待辨）",
+      "technique_ids": [
+        "S04"
+      ],
+      "time_seconds": 5.5,
+      "snapshot": "frames/05.50.jpg",
+      "note": "功能与卡片已收录，准确标题字形待核。"
+    },
+    {
+      "label": "Ding，可爱提示音",
+      "technique_ids": [
+        "S05"
+      ],
+      "time_seconds": 10.5,
+      "snapshot": "frames/10.50.jpg"
+    },
+    {
+      "label": "综艺可爱眨眼的声音",
+      "technique_ids": [
+        "S06"
+      ],
+      "time_seconds": 12.5,
+      "snapshot": "frames/12.50.jpg"
+    },
+    {
+      "label": "Tom鼓",
+      "technique_ids": [
+        "S07"
+      ],
+      "time_seconds": 16.5,
+      "snapshot": "frames/16.50.jpg"
+    },
+    {
+      "label": "生气了 (OMG…（标题截断）",
+      "technique_ids": [
+        "S08"
+      ],
+      "time_seconds": 17.5,
+      "snapshot": "frames/17.50.jpg",
+      "note": "音乐卡片标题截断，未补全。"
+    }
+  ],
+  "observations": [
+    {
+      "label": "原片可见：“很”“终于——”等字更大",
+      "technique_ids": [
+        "V24"
+      ],
+      "time_seconds": 14.5,
+      "snapshot": "frames/14.50.jpg"
+    },
+    {
+      "label": "原片可见：目标前的小旗、“开拆”旁剪刀",
+      "technique_ids": [
+        "V25"
+      ],
+      "time_seconds": 3.5,
+      "snapshot": "frames/03.50.jpg"
+    },
+    {
+      "label": "原片可见：“开拆！”倾斜排布",
+      "technique_ids": [
+        "V26"
+      ],
+      "time_seconds": 5.5,
+      "snapshot": "frames/05.50.jpg"
+    },
+    {
+      "label": "原片可见：产品特写的明暗窗口",
+      "technique_ids": [
+        "V27"
+      ],
+      "time_seconds": 12.5,
+      "snapshot": "frames/12.50.jpg"
+    },
+    {
+      "label": "原片可见：“点睛之笔”",
+      "technique_ids": [
+        "V28"
+      ],
+      "time_seconds": 12.5,
+      "snapshot": "frames/12.50.jpg"
+    },
+    {
+      "label": "原片可见：结尾多行 # 标签逐条出现",
+      "technique_ids": [
+        "V29"
+      ],
+      "time_seconds": 20.5,
+      "snapshot": "frames/20.50.jpg"
+    }
+  ]
+}

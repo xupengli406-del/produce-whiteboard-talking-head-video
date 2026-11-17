@@ -4,13 +4,13 @@
 
 ## 读取当前共享规范
 
-优先读取当前环境安装的同名 Skill 文件，按需调用封面专项能力；下列仓库链接用于定位共享维护处，不要求固定的本机路径或额外安装：
+按需读取本包随分发生成的共用模块，封面与发布规则沿用当期选择，画板的连续画布、真实逐笔、右侧笔记与人物大小切换由本包负责：
 
-- `edit-talking-head-social-video/references/covers-and-release.md`：[真人封面与发布材料](https://github.com/xupengli406-del/edit-talking-head-social-video/blob/main/references/covers-and-release.md)，负责观看理由、封面制作顺序和交付验收。
-- `edit-talking-head-social-video/references/four-platform-delivery.md`：当前已安装的四平台交付参考，负责平台材料、比例用途、字幕与章节、使用说明及包内映射；[共享参考维护目录](https://github.com/xupengli406-del/edit-talking-head-social-video/tree/main/references)用于定位，不能假定本地新增文件已同步到远端。
-- `$produce-social-media-cover`：[封面专项入口](https://github.com/xupengli406-del/produce-social-media-cover/blob/main/SKILL.md)，按其当前入口读取共用背景/人像/文字流程与排版菜单，再由当期视觉方向承接；大标题真人方向按入口路由到可用的 `$produce-big-title-cover`，不在本 Skill 复制其设计规则。
+- [封面与发布材料](../shared-video/references/covers-and-release.md)：观看理由、封面制作顺序和交付验收。
+- [四平台交付](../shared-video/references/four-platform-delivery.md)：平台材料、比例用途、字幕与章节、使用说明及包内映射。
+- `$produce-social-media-cover`：[封面专项入口](https://github.com/xupengli406-del/produce-social-media-cover/blob/main/SKILL.md)，按需处理背景、人像和文字；大标题真人方向由 `$produce-big-title-cover` 承接。当期视觉方向与已选方案优先。
 
-共享资源或工具不可用时，说明实际缺口，仍按下列约束推进可完成的内容，不把缺少另一个 Skill 当作静默改风格或降低交付范围的理由。平台实际限制以本次上传页或官方说明为准。
+平台实际限制在本次使用时按上传页或官方说明核对。
 
 ## 从已确认视频交接
 

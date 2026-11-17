@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "label": "字段示例：复制到用户工程的edit-plan.json并替换source.mp4及实际媒体信息；不是已完成的剪辑",
+  "output": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "duration": 3,
+    "path": "example-output.mp4"
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "path": "source.mp4",
+      "duration": 21.134,
+      "has_audio": true
+    }
+  ],
+  "clips": [
+    {
+      "id": "talk",
+      "source_id": "reference",
+      "mode": "play",
+      "source_in": 0,
+      "source_out": 2,
+      "playback_rate": 1,
+      "timeline_start": 0,
+      "timeline_duration": 2,
+      "primary": true
+    },
+    {
+      "id": "hold",
+      "source_id": "reference",
+      "mode": "freeze",
+      "source_time": 2.5,
+      "timeline_start": 2,
+      "timeline_duration": 1,
+      "primary": true
+    }
+  ],
+  "assets": [],
+  "objects": [
+    {
+      "id": "picture",
+      "kind": "media",
+      "clip_id": "talk"
+    },
+    {
+      "id": "held_picture",
+      "kind": "media",
+      "clip_id": "hold"
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "示例重点词"
+    }
+  ],
+  "requested_methods": [
+    "V04",
+    "V12",
+    "V20",
+    "V21"
+  ],
+  "requested_recipes": [],
+  "effects": [
+    {
+      "id": "title-in",
+      "method_id": "V04",
+      "object_id": "title",
+      "start": 0,
+      "end": 0.4,
+      "anchor_time": 0.1,
+      "params": {
+        "scale_from": 0.8,
+        "scale_to": 1
+      },
+      "implementation": "manual-equivalent",
+      "status": "planned"
+    },
+    {
+      "id": "picture-zoom",
+      "method_id": "V12",
+      "object_id": "picture",
+      "start": 0.1,
+      "end": 0.5,
+      "anchor_time": 0.2,
+      "params": {
+        "scale_from": 1,
+        "scale_to": 1.12,
+        "pivot": [
+          0.5,
+          0.4
+        ]
+      },
+      "implementation": "manual",
+      "status": "planned"
+    },
+    {
+      "id": "hold-pose",
+      "method_id": "V20",
+      "object_id": "held_picture",
+      "start": 2,
+      "end": 3,
+      "anchor_time": 2,
+      "params": {
+        "source_time": 2.5
+      },
+      "implementation": "manual",
+      "status": "planned"
+    },
+    {
+      "id": "hold-scale",
+      "method_id": "V21",
+      "object_id": "held_picture",
+      "start": 2,
+      "end": 3,
+      "anchor_time": 2,
+      "params": {
+        "scale": 1.12
+      },
+      "implementation": "manual",
+      "status": "planned"
+    }
+  ],
+  "review": {
+    "visual": {
+      "status": "pending"
+    },
+    "audio": {
+      "status": "pending"
+    }
+  }
+}
